@@ -12,12 +12,18 @@ return [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'dateFormat' => 'php:j M Y',
+            'timeFormat' => 'php:H:i',
+            'timeZone' => 'Asia/Bangkok',
+        ],
         // here you can set theme used for your frontend application 
         // - template comes with: 'default', 'slate', 'spacelab' and 'cerulean'
         'view' => [
             'theme' => [
-                'pathMap' => ['@app/views' => '@webroot/themes/slate/views'],
-                'baseUrl' => '@web/themes/slate',
+                'pathMap' => ['@app/views' => '@webroot/themes/cerulean/views'],
+                'baseUrl' => '@web/themes/cerulean',
             ],
         ],
         'user' => [

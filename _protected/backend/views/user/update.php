@@ -1,4 +1,5 @@
 <?php
+
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
@@ -11,16 +12,26 @@ $this->params['breadcrumbs'][] = ['label' => $user->username, 'url' => ['view', 
 $this->params['breadcrumbs'][] = Yii::t('app', 'Update');
 ?>
 <div class="user-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
-
-    <div class="col-lg-5 well bs-component">
-
-        <?= $this->render('_form', [
-            'user' => $user,
-            'role' => $role,
-        ]) ?>
-
+    <div class="row">
+        <div class="user-create">
+            <div class="col-lg-6">
+                <div class="box box-solid box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">ปรับปรุงผู้ใช้</h3>
+                    </div><!-- /.box-header -->
+                    <div class="box-body">
+                        <?=
+                        $this->render('_form', [
+                            'user' => $user,
+                            'role' => $role,
+                        ])
+                        ?>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                        เป็นการปรับปรุงผู้ใช้
+                    </div><!-- box-footer -->
+                </div><!-- /.box -->
+            </div>
+        </div>
     </div>
-
 </div>

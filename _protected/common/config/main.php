@@ -1,6 +1,6 @@
 <?php
 return [
-    'name' => 'My Company',
+    'name' => 'IRON CHANG',
     //'language' => 'sr',
     'vendorPath' => dirname(dirname(__DIR__)) . '/vendor',
     'components' => [
