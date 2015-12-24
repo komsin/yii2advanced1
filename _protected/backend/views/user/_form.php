@@ -39,11 +39,12 @@ use yii\widgets\ActiveForm;
     </div>
 
     <div class="form-group">     
-        <?= Html::submitButton($user->isNewRecord ? Yii::t('app', 'Create') 
-            : Yii::t('app', 'Update'), ['class' => $user->isNewRecord 
+        <?= Html::submitButton($user->isNewRecord ? Yii::t('app', 'บันทึก') 
+            : Yii::t('app', 'แก้ไขข้อมูล'), ['class' => $user->isNewRecord 
             ? 'btn btn-success' : 'btn btn-primary']) ?>
 
-        <?= Html::a(Yii::t('app', 'Cancel'), ['user/index'], ['class' => 'btn btn-default']) ?>
+        <?= Html::a(Yii::t('app', 'ยกเลิก'), ['user/index'], ['class' => 'btn btn-warning']) ?>
+        
     </div>
 
     <?php ActiveForm::end(); ?>

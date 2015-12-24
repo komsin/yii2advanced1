@@ -36,10 +36,10 @@ use dmstr\widgets\Alert;
 </div>
 
 <footer class="main-footer">
-    <div class="pull-right hidden-xs">
+    <!--forder right <div class="pull-right hidden-xs">
         <b>Version</b> 2.0
-    </div>
-    <strong>Copyright &copy; 2015 <a href="www.ironchang.com">IRON CHANG COMPANY</a>.</strong> All rights
+    </div>-->
+    <strong>Copyright &copy; 2015 <a href="http://ironchang.com">IRON CHANG COMPANY</a>.</strong> All rights
     reserved.
 </footer>
 
